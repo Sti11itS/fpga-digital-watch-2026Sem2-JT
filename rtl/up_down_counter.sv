@@ -1,5 +1,10 @@
 // Up_Down_Counter
-// To edit time conveniently, to increment or decrement the count value.
+// To act as a standard Counter, whose modulus value is determined by the
+// MAX parameter argument that was passed into it. The counter will count up
+// when the up input is high, and count down when the up input is low. The
+// counter will wrap back to 0 when the maximum value is reached, and wrap
+// back to the maximum value when the minimum value is reached for up and
+// down counting, respectively.
 //
 // Parameters:
 //   MAX    - Maximum count value (default: 2).
