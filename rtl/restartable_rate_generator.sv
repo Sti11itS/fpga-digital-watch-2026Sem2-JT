@@ -16,13 +16,14 @@
 //                  tick_qualifier is high.
 //
 // Local Variables:
-//   CountWidth:    - Bit width of the generated Mod_CYCLE_COUNT counter.
-//   rst_count:     - Reset signal for the generated Mod_CYCLE_COUNT counter.
-//   enable_count:  - Enable signal for the generated Mod_CYCLE_COUNT counter.
-//   count:         - Count output of the generated Mod_CYCLE_COUNT counter.
-//   tick_qualifier:- High when the generated Mod_CYCLE_COUNT counter reaches
-//                    its maximum value, indicating a tick should be generated.
-//   running:       - Indicates whether the rate generator is currently running
+//   CountWidth:    - Bit width of parameter CYCLE_COUNT.
+//   rst_count:     - Reset signal for the generated `mod_n_counter` counter.
+//   enable_count:  - Enable signal for the generated `mod_n_counter` counter.
+//   count:         - Count output of the generated `mod_n_counter` counter.
+//   tick_qualifier:- High when the generated `mod_n_counter` counter reaches
+//                    its maximum value.
+//   running:       - Indicates whether the rate generator is enabled based
+//                    on input signal `run`.
 
 `timescale 1ns / 1ps
 
