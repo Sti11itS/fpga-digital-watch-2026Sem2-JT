@@ -74,7 +74,7 @@ module edit_mode_selector #(
   );
 
   // Counter runs only while armed; resets when disarmed
-  assign enable_counter = (armed && (long_press || press));
+  assign enable_counter = (armed && press);
   assign reset_counter = disarm;
 
   // Disarm on the press that steps past the last mode

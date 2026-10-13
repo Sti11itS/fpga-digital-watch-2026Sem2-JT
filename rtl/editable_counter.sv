@@ -36,7 +36,7 @@ module editable_counter #(
     input logic tick,  // Count increments on tick when edit_mode is LOW
     input logic edit_mode,
     input logic inc,  // Count increments by one when edit_mode is HIGH
-    input logic dec,  // Count decrements by one when edit_mode is LOW
+    input logic dec,  // Count decrements by one when edit_mode is HIGH
     output logic [WIDTH-1:0] count
 );
 
