@@ -15,6 +15,7 @@
 //    [WIDTH-1:0] prev_d: - Intermediary Signal, stores `d` at `hold`'s last
 //                          LOW signal
 
+`timescale 1ns / 1ps
 
 module snapshot_mux #(
     parameter int WIDTH = 1
